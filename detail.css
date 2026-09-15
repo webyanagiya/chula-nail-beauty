@@ -182,3 +182,24 @@ body{background:#fff9fb}
 .hero .lead{color:#fff7fa}
 .hero .text-link{color:#fff}
 .hero .button.dark{background:linear-gradient(135deg,#fff,#ffe3eb);color:#7d304b;box-shadow:0 14px 36px rgba(91,32,57,.26)}
+
+/* CHULA NAIL SCHOOL banner */
+.school-banner{display:grid;grid-template-columns:52% 48%;margin:90px auto;max-width:1320px;background:#fff;box-shadow:0 24px 60px rgba(120,86,46,.16);overflow:hidden}
+.school-photo{position:relative;overflow:hidden;min-height:460px}
+.school-photo img{min-height:460px}
+.school-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(74,52,35,0) 60%,rgba(74,52,35,.32))}
+.school-copy{padding:clamp(45px,6vw,80px);background:linear-gradient(160deg,#fbf3e6 0%,#f2e2c9 100%);display:flex;flex-direction:column;justify-content:center}
+.school-copy .eyebrow{color:#a97c50}
+.school-copy .eyebrow:before{content:"✦";color:#c6a15b;margin-right:8px}
+.school-copy h3{font-size:clamp(24px,2.6vw,34px);font-weight:400;line-height:1.6;color:#5b4128;margin:16px 0 20px}
+.school-copy>p{color:#6b5843;margin:0 0 26px;max-width:520px}
+.school-points{list-style:none;margin:0 0 32px;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.school-points li{border:1px solid rgba(169,124,80,.45);background:rgba(255,255,255,.7);border-radius:50px;padding:7px 16px;font-size:12px;color:#6b4b2a}
+.school-copy .button{background:linear-gradient(135deg,#a97c50,#c6a15b);color:#fff;width:max-content;box-shadow:0 12px 28px rgba(120,86,46,.3)}
+@media(max-width:800px){
+  .school-banner{grid-template-columns:1fr;margin:55px 12px;max-width:none}
+  .school-photo,.school-photo img{min-height:280px}
+  .school-copy{padding:40px 24px}
+  .school-copy h3{font-size:26px}
+  .school-copy>p{max-width:none}
+}
